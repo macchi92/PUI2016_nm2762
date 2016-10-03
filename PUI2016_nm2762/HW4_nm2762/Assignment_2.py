@@ -73,7 +73,7 @@
 # 
 # IV(s): 2, Income and benefits
 # 
-# IV type(s): ordinal
+# IV type(s): ordinal/continouis
 # 
 # 
 # DV(s): 8, EDSS, Age, Sex, Geographical region, Family Composition, Type of living area, Contry of birth, Education
@@ -81,10 +81,10 @@
 # DV type(s): Categorical
 # 
 # 
-# Control Var : 0
+# Control Var : People without MS
 # 
 # 
-# Control Var type : none
+# Control Var type : Categorical
 # 
 # 
 # H0: People with disability have lower income and higher benefits than people without.
