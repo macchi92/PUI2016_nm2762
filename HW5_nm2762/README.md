@@ -1,3 +1,8 @@
+I worked with Hrafnkell Hjorleifsson for assignent 2
+
+
+
+
 # Assignment 3
 
 ## Formulate the Null hypothesis in words and in formulae for the 4 experiments below:
