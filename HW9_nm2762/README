@@ -1,1 +1,24 @@
-I WORKED WITH hrafnkell hjorleifsson FOR THE FIRST 2 TASK. I UNFORTUNATELY HADN'T TIME TO FIGURE OUT THE THIRD ONE.
+I WORKED WITH hrafnkell hjorleifsson FOR THE Tasks
+
+
+I just see that I missed a few lines at the end of the notebook. I didn't save before uploading it so I this few lines are missing.
+
+
+
+
+# looking at frequency
+1/np.fft.rfftfreq(N, 1.0)
+
+# creating a list and filling it with the values of interest
+powerlist = []
+for i in range(0, len(mta_allsum_types)):
+    powerlist.append(np.abs(np.fft.rfft(mta_allsum_types[i]))[4])
+    
+    # creating a dataframe with the values of the list
+power_df = pd.DataFrame(powerlist)
+power_df.rename(columns={0 : "power"}, inplace=True)
+
+#sorting stations by annual periodicity, showing top4
+power_df.sort(columns='power', ascending=False).head(4)
+
+### The four stations with the highest seasonal periodicity are stations 0, 194, 150 and 327.
